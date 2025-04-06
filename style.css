@@ -4,16 +4,14 @@ body{
 	background-position: center;
 	background-size: cover;
 	width:1440px;
-	height:4580px;
+	
 }
 
 .header{
 	height:78px;
 	width:1440px;
-	background-color: #ffffff;	
+	background-color: #ffffff;
 }
-
-
 
 .h1{
 	font-family: 'Homemade Apple';
@@ -74,7 +72,7 @@ body{
 	font-color: #284B63;
 	font-size: 20px;
 	display: flex;
-	justify-content: center;
+	justify-content: ;
 	padding-top:20px;
 	padding-bottom: 20px;
 }
@@ -102,11 +100,10 @@ body{
 	justify-content: space-evenly;	
 	padding-top: 30px;
 	padding-bottom:30px;
-	height:212px;
+	height:150px;
 	width:1440px;
 	background-color: #ffffff;	
 }
-
 
 .onepicture{
 	padding-top: 30px;
@@ -120,12 +117,8 @@ body{
 
 .twopicture{
 	padding-top: 30px;
-	height: 511px;
-	width: 940px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 20px;
+	height: 350px;
+	width: 500px;
 }
 
 .line{
@@ -162,7 +155,17 @@ body{
 
 .column{
 	flex-direction:column;
+
 }
+
+.column2{
+	display:flex;
+	flex-direction:column;
+	height: 300px;
+	width: 500px;
+
+}
+
 
 
 
