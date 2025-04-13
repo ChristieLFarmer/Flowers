@@ -3,28 +3,60 @@ body{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	width:1440px;
+	width:100%;
 	
 }
 
 .header{
 	height:78px;
-	width:1440px;
+	width: 100%;
 	background-color: #ffffff;
 }
 
 .h1{
 	font-family: 'Homemade Apple';
-	font-color: #000000;
+	font-size: 52px;
+	text-align:center;
+	padding-top:50px;
+}
+
+.h2{
+	font-family: 'Roboto';
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	padding-top:20px;
+	padding-bottom: 20px;
+}
+
+.h3{
+	font-family: 'Homemade Apple';
+	font-size: 32px;
+	padding-top:30px; 
+	display: flex;
+	justify-content: center;
+}
+
+.h4{
+	font-family: 'Roboto';
+	font-color: #284B63;
+	font-size: 26px;
+	display: flex;
+	justify-content: center;
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+
+.h5{
+	font-family: 'Homemade Apple';
 	font-size: 24px;
 	float: left;
 	padding-left: 20px;
 	padding-top: 15px;
 }
 
-.h2{
+.h6{
 	font-family: 'Roboto';
-	font-color: #000000;
 	font-size: 18px;
 	float: right;
 	padding-right: 20px;
@@ -33,51 +65,14 @@ body{
 	display: flex;
 }
 
-.pagetitle{
-	font-family: 'Homemade Apple';
-	font-color: #284B63;
-	font-size: 52px;
-	text-align:center;
-	padding-top:50px;
-}
-
-.subtitle{
-	font-family: 'Homemade Apple';
-	font-color: #284B63;
-	font-size: 32px;
-	padding-top:50px; 
-}
-
-.subtitle2{
-	font-family: 'Homemade Apple';
-	font-color: #284B63;
-	font-size: 32px;
-	padding-top:50px; 
-	display: flex;
-	justify-content: center;
-}
-
-.text{
+.h7{
 	font-family: 'Roboto';
-	font-color: #284B63;
-	font-size: 30px;
-	display: flex;
-	justify-content: center;
-	padding-top:20px;
-	padding-bottom: 20px;
-}
-
-.subtext{
-	font-family: 'Roboto';
-	font-color: #284B63;
-	font-size: 20px;
-	display: flex;
-	justify-content: ;
-	padding-top:20px;
-	padding-bottom: 20px;
+	font-color: #000000;
+	font-size: 14px;
 }
 
 .button{
+	font-family: 'Roboto';
 	font-size: 26px; 
 	background-color:#284B63; 
 	color: #ffffff;
@@ -93,6 +88,8 @@ body{
 	justify-content: space-evenly;	
 	padding-top: 30px;
 	padding-bottom:30px;
+	height:350px;
+	width:100%;
 }
 
 .content2{
@@ -101,12 +98,31 @@ body{
 	padding-top: 30px;
 	padding-bottom:30px;
 	height:150px;
-	width:1440px;
-	background-color: #ffffff;	
+	width:100%;
+	background-color: #ffffff;
 }
 
-.onepicture{
+.content3{
+	display: flex;
+	justify-content: space-evenly;	
 	padding-top: 30px;
+	padding-bottom:30px;
+	height:75px;
+	width:100%;
+}
+
+.content4{
+	display: flex;
+	justify-content: space-evenly;	
+	padding-top: 30px;
+	padding-bottom:30px;
+	height:510px;
+	width:100%;
+}
+
+
+.onepicture{
+	padding-top: 10px;
 	height: 511px;
 	width: 940px;
 	display: block;
@@ -117,16 +133,17 @@ body{
 
 .twopicture{
 	padding-top: 30px;
+	padding-bottom:px;
 	height: 350px;
 	width: 500px;
 }
 
 .line{
 	border-bottom: 10px solid;
-	position: abolute;
 	height: 30px;
 	color: #AFBEC8;
-	border-size: cover;
+	padding-top:25px;
+	padding-bottom:px;
 }
 
 .footer{	
@@ -134,28 +151,9 @@ body{
 	justify-content: space-around;
 }
 
-.f1{
-	font-family: 'Homemade Apple';
-	font-color: #000000;
-	font-size: 24px;
-}
-
-.f2{
-	font-family: 'Roboto';
-	font-color: #000000;
-	font-size: 20px;
-	font-weight: bold;
-}
-
-.f3{
-	font-family: 'Roboto';
-	font-color: #000000;
-	font-size: 14px;
-}
-
 .column{
 	flex-direction:column;
-
+	justify-content: ;
 }
 
 .column2{
@@ -163,7 +161,6 @@ body{
 	flex-direction:column;
 	height: 300px;
 	width: 500px;
-
 }
 
 
