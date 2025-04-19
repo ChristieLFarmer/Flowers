@@ -4,55 +4,391 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<style>
+			a:link{
+				color:black;
+				background-color:transparent;
+				text-decoration: none;
+			}
+			a:hover{
+				color: #3C6E71;
+				background-color:transparent;
+				text-decoration: underline;
+			}
+			input[type="text"]{
+				height: 22px;
+				background-color: #D9D9D9;
+				border-style: none;
+				max-width: 75%;
+			}
+			input[type="tel"]{
+				height: 22px;
+				background-color: #D9D9D9;
+				border-style: none;
+				max-width: 75%;
+			}
+			input[type="email"]{
+				height: 22px;
+				background-color: #D9D9D9;
+				border-style: none;
+				max-width: 75%;
+			}
+			input[type="date"]{
+				height: 22px;
+				background-color: #D9D9D9;
+				border-style: none;
+				font-family: 'Roboto';
+			}
+			input[type="checkbox"]{
+				height: 18px;
+				background-color: #D9D9D9;
+				border-style: none;
+				accent-color: #284B63;
+				font-family: 'Roboto';
+			}
+			@media only screen and (min-width: 380px){
+				.container {
+				flex-direction: row;
+				flex-wrap: wrap;
+				}
+				.container .content-block{
+				width: 48.5%;
+				}
+			}
+			@media only screen and (min-width: 730px){
+				.container{
+				padding: 20px;
+				}
+				.container .content-block{
+				width: 32.5%;
+				}
+			}
+		</style>
 	<head>
  
 <body>
-
 	<div class="header">
-		<div class="h5">Laine's Lilies</div>
-		<div class="h6">My Garden Basket</div>
+		<a href="index.html">
+		<div class="h5">Laine's Lilies</div></a>
+		<a href="mygardenbasket.html">
+		<div class="h6">My Garden Basket</div> </a>	
 		<div class="h6">Large Event Info</div>
-		<div class="h6">Place an Order</div>
-		<div class="h6">Today's Bouquets</div>
+		<a href="placeanorder.html">
+		<div class="h6">Place an Order</div></a>
+		<a href="todaysbouquets.html">
+		<div class="h6">Today's Bouquets</div></a>
+	</div>	
+
+
+<div class="h1"> Large Event Information</div>
+
+<div class="h2"> Please fill out the contact information below and<br> Laine's Lilies will contact you to schedule an appointment. </div>
+
+<div class="box">
+
+
+
+<form action="/action/page.php">
+
+<div class="h8"><b>Contact Information</b></div>
+	<div class="content3">
+		<div class="column2">
+			<label for="fname" class="h8" >First Name:</label>
+			<input type="text" id="fname" name="fname">
+		<br>
+			<label for="phone" class="h8" >Phone Number:</label>
+			<input type="tel" id="phone" name="phone">
+		</div>
+
+		<div class="column2">
+			<label for="lname" class="h8"> Last Name: </label>
+			<input type="text" id="lname" name="lname">
+		<br>
+			<label for="email" class="h8"> Email Address: </label>
+			<input type="email" id="email" name="email">
+		</div>
 	</div>
 
+<br>
+
+<div class="h8"> <b>Preferred Method of Contact</b></div>
+
+	<div class="content3">
+		<div class="container">
+			<input type="checkbox" name="contact" value="Phone" id="Phone">
+			<label for="Phone" class="h8">Phone</label>
+		</div>
+		<div class="container">
+			<input type="checkbox" name="contact" value="Text" id="Text">
+			<label for="Text" class="h8"> Text</label>
+		</div>
+		<div class="container">
+			<input type="checkbox" name="Email" value="Email" id="Email">
+			<label for="Email" class="h8">Email</label>
+		</div>
+	</div>
+
+<div class="h8"><b> Date of Event</b></div>
+
+	<div class="container">
+		<label for="date" class="h8"></label>
+		<input type="date" id="date" name="date">
+		</div>
+
+<br>
+
+<div class="h8"> <b>Type of Event - Please check 1 box</b></div>
+
+	<div class="content3">
+		<div class="container">
+			<input type="checkbox" name="event" value="Baby Shower" id="Baby Shower">
+			<label for="Baby Shower" class="h8">Baby Shower</label>
+		</div>
+
+		<div class="container">
+			<input type="checkbox" name="event" id="Bridal Shower" value="Bridal Shower">
+			<label for="Bridal Shower" class="h8">Bridal Shower</label>
+		</div>	
+
+		<div class="container">
+			<input type="checkbox" name="event" value="Anniversary Party" id="Anniversary Party">
+			<label for="Anniversary Party" class="h8">Anniversary Party</label>	
+		</div>
+	</div>
+
+	<div class="content3">
+		<div class="container">
+			<input type="checkbox" name="event" value="Birthday Party" id="Birthday Party">
+			<label for="Birthday Party" class="h8">Birthday Party</label>
+		</div>
+
+		<div class="container">
+			<input type="checkbox" name="event" value="Wedding" id="Wedding">
+			<label for="Wedding" class="h8">Wedding</label>
+		</div>
+
+		<div class="container">
+			<input type="checkbox" name="event" value="Other" id="Other">
+			<label for="Other" class="h8">Other</label>
+		</div>
+	</div>
+
+<br>
+
+<div class="h8"> <b>Flower Needs - Please check all that apply</b></div>
+
+	<div class="content3">
+		<div class="container">
+			<input type="checkbox" name="needs" value="Corsages" id="Corsages">
+			<label for="text" class="h8">Corsages</label>
+		</div>
+
+		<div class="container">
+			<input type="checkbox" name="needs" value="Center Pieces" id="Center Pieces">
+			<label for="text" class="h8">Center Pieces</label>
+		</div>	
+
+		<div class="container">
+			<input type="checkbox" name="needs" value="Alter Arrangements" id="Alter Arrangements">
+			<label for="text" class="h8">Alter Arrangements</label>		
+		</div>
+
+		<div class="container">
+			<input type="checkbox" name="needs" value="Food Table Arrangements" id="Food Table Arrangements">
+			<label for="text" class="h8">Food Table Arrangements</label>		
+		</div>
+	</div>
+
+	<div class="content3">
+		<div class="container">
+			<input type="checkbox" name="needs" value="Boutonniers" id="Boutonniers">
+			<label for="text" class="h8">Boutonniers</label>
+		</div>
+
+		<div class="container">
+			<input type="checkbox" name="needs" value="Bouquets" id="Bouquets">
+			<label for="text" class="h8">Bouquets</label>
+		</div>
+	
+		<div class="container">
+			<input type="checkbox" name="needs" value="Aisle Decorations" id="Aisle Decorations">
+			<label for="text" class="h8">Aisle Decorations</label>
+		</div>
+
+		<div class="container">
+			<input type="checkbox" name="needs" value="Other" id="Other">
+			<label for="text" class="h8">Other</label>
+		</div>
+	</div>
+
+<br>
+
+<div class="h8"> <b>Favorite Flowers - Please pick up to 3</b></div>
+
+	<div class="content3">
+		<div class="container">
+			<input type="checkbox" name="favorites" value="Daisies" id=Daisies>
+			<label for="text" class="h8">Daisies</label>
+		</div>
+
+		<div class="container">
+			<input type="checkbox" name="favorites" value="Lilies" id="Lilies">
+			<label for="text" class="h8">Lilies</label>
+		</div>
+	
+		<div class="container">
+			<input type="checkbox" name="favorites" value="Sunflowers" id="Sunflowers">
+			<label for="text" class="h8">Sunflowers</label>
+			</div>
+
+		<div class="container">
+			<input type="checkbox" name="favorites" value="Orchids" id="Orchids">
+			<label for="text" class="h8">Orchids</label>
+		</div>
+	</div>
+
+	<div class="content3">
+		<div class="container">
+			<input type="checkbox" name="favorites" value="Roses" id="Roses">
+			<label for="text" class="h8">Roses</label>
+		</div>
+
+		<div class="container">
+			<input type="checkbox" name="favorites" value="Carnations" id="Carnations">
+			<label for="text" class="h8">Carnations</label>
+		</div>
+	
+		<div class="container">
+			<input type="checkbox" name="favorites" value="Hydrangeas" id="Hydrangeas">
+			<label for="text" class="h8">Hydrangeas</label>
+		</div>
+	
+		<div class="container">
+			<input type="checkbox" name="favorites" value="Peonies" id="Peonies">
+			<label for="text" class="h8">Peonies</label>
+		</div>
+	</div>
+
+	<div class="content3">
+		<div class="container">
+			<input type="checkbox" name="favorites" value="Tulips" id="Tulips">
+			<label for="text" class="h8">Tulips</label>
+		</div>
+
+		<div class="container">
+			<input type="checkbox" name="favorites" value="Daffodils" id="Daffodils">
+			<label for="text" class="h8">Daffodils</label>
+		</div>
+	
+		<div class="container">
+			<input type="checkbox" name="favorites" value="Violets" id="Violets">
+			<label for="text" class="h8">Violets</label>
+		</div>
+	
+		<div class="container">
+			<input type="checkbox" name="favorites" value="Chrysanthemums" id="Chrysanthemums">
+			<label for="text" class="h8">Chrysanthemums</label>
+		</div>
+	</div>
+
+<br>
+
+<div class="h8"> <b>Favorite Style - Please pick up to 2</b></div>
+
+	<div class="content3">
+		<div class="container">
+			<input type="checkbox" name="style" value="Elegant" id="Elegant">
+			<label for="text" class="h8">Elegant</label>
+		</div>
+
+		<div class="container">
+			<input type="checkbox" name="style" value="Minimalist" id="Minimalist">
+			<label for="text" class="h8">Minimalist</label>
+		</div>
+	
+		<div class="container">
+			<input type="checkbox" name="style" value="Classic" id="Classic">
+			<label for="text" class="h8">Classic</label>
+		</div>
+
+		<div class="container">
+			<input type="checkbox" name="style" value="Bohemian" id="Bohemian">
+			<label for="text" class="h8">Bohemian</label>
+		</div>
+	</div>
+
+	<div class="content3">
+		<div class="container">
+			<input type="checkbox" name="style" value="Rustic" id="	Rustic">
+			<label for="text" class="h8">Rustic</label>
+		</div>
+
+		<div class="container">
+			<input type="checkbox" name="style" value="Boho-Chic" id="Boho-Chic">
+			<label for="text" class="h8">Boho-Chic</label>
+		</div>
+	
+		<div class="container">
+			<input type="checkbox" name="style" value="Exotic" id=Exotic>
+			<label for="text" class="h8">Exotic</label>
+		</div>
+
+		<div class="container">
+			<input type="checkbox" name="style" value="Romantic" id="Romantic">
+			<label for="text" class="h8">Romantic</label>
+		</div>
+	</div>
+
+<div class="content">
+<a href="thankyou.html">	
+	<div class="button"> 
+		Submit 
+	</div> </a>
+</div>
+
+<br>
+</form>
+
+</div>
+
+</p>
 
 <div class="line"></div>
 
 <div class="content2">
 	<div class="footer">
-		<div class="column">
-		<div class="h5">Laine's Lilies</div>
+		<div class="column"> <a href="index.html">
+		<div class="h5">Laine's Lilies</div></a>
 		<div class="h7"> 123 Linden Street <br>
 		Big City 12345 <br> 717-555-1234 <br> 2025 <br> Privacy - Terms</div>
 		</div>
 	</div>
 
 	<div class="footer">
-		<div class="column">
-		<div class="h6">My Garden Basket</div>
-		<div class="h7">Checkout</div>
-		</div>
-	</div>
-
-	<div class="footer">
-		<div class="column">
-		<div class="h6">Large Event Info</div>
-		<div class="h7">Shop Now</div>
-		</div>
-	</div>
-
-	<div class="footer">
-		<div class="column">
-		<div class="h6">Place an Order</div>
-		<div class="h7">Shop Now</div>
-		</div>
-	</div>
-
-	<div class="footer">
-		<div class="column">
+		<div class="column"><a href="todaysbouquets.html">
 		<div class="h6">Today's Bouquets</div>
-		<div class="h7">Shop Now</div>
+		<div class="h7">Shop Now</div></a>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="column"><a href="placeanorder.html">
+		<div class="h6">Place an Order</div>
+		<div class="h7">Shop Now</div></a>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="column"><a href="largeeventinfo">
+		<div class="h6">Large Event Info</div>
+		<div class="h7">Shop Now</div></a>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="column"><a href="mygardenbasket.html">
+		<div class="h6">My Garden Basket</div>
+		<div class="h7">Checkout</div></a>
 		</div>
 	</div>
 </div>

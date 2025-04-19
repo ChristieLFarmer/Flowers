@@ -4,16 +4,50 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<style>
+			a:link{
+				color:black;
+				background-color:transparent;
+				text-decoration: none;
+			}
+			a:hover{
+				color: #3C6E71;
+				background-color:transparent;
+				text-decoration: underline;
+			}
+	@media only screen and (min-width: 380px){
+		.container {
+			flex-direction: row;
+			flex-wrap: wrap;
+			}
+		.container .content-block{
+			width: 48.5%;
+			}
+		}
+	@media only screen and (min-width: 730px){
+		.container{
+			padding: 20px;
+			}
+		.container .content-block{
+			width: 32.5%;
+			}
+		}
+	</style>
 	<head>
  
 <body>
 
 	<div class="header">
-		<div class="h5">Laine's Lilies</div>
-		<div class="h6">My Garden Basket</div>
-		<div class="h6">Large Event Info</div>
-		<div class="h6">Place an Order</div>
-		<div class="h6">Today's Bouquets</div>
+		<a href="index.html">
+		<div class="h5">Laine's Lilies</div> </a>
+		<a href="mygardenbasket.html">
+		<div class="h6">My Garden Basket</div> </a>
+		<a href="largeeventinfo.html">
+		<div class="h6">Large Event Info</div></a>
+		<a href="placeanorder.html">
+		<div class="h6">Place an Order</div></a>
+		<a href="todaysbouquets.html">
+		<div class="h6">Today's Bouquets</div></a>
 	</div>	
 
 	<div class="h1">Laine's Lilies</div>
@@ -22,185 +56,166 @@
 		See what's fresh cut today, place an order <br> or request information for your next large event.
 	</div>
 
-<div class="content3">	
-	<div class="button">
-		Today's Bouquets
-	</div>
-
-	<div class="button">
+	<div class="content">	
+		<a href="todaysbouquets.html">	
+		<div class="button"> 
+		Today's Bouquets 
+		</div> </a>
+		<a href="placeanorder.html">
+		<div class="button">
 		Place an Order
-	</div>
-
-	<div class="button">
+		</div> </a>
+		<a href="largeeventinfo.html">
+		<div class="button">
 		Large Event Information
-	</div>
-</div>	
-
+		</div> </a>
+	</div>	
+<br>
 	<div class="onepicture">
 		<img src="images\sunflowers.jpg" alt="field of sunflowers, sunrise on the horizon"
-		width="940">
+		width="70%">
 	</div>
-
+<br>
 <div class="line"></div>
-
+<br>
 	<div class="h3">
 		Customer Reviews
 	</div>
-<div class="content">
 
-<div class="column">
-	<div class="h3">
-		&#9733 &#9733 &#9733 &#9733 &#9733
+	<div class="content">
+		<div class="column">
+			<div class="h3">
+			&#9733 &#9733 &#9733 &#9733 &#9733
+			</div>
+			<div class="h4">
+			Megan from Elizabethtown <br>
+			Laine’s Lilies did an amazing <br>job arranging centerpieces<br> for my sister’s baby shower <br>and helped develop my vision <br>and I couldn’t be happier!
+			</div>
+		</div>
+	
+		<div class="column">
+			<div class="h3">
+			&#9733 &#9733 &#9733 &#9733 &#9733
+			</div>
+			<div class="h4">
+			Emily from Middletown <br> A friend sent me a potted <br>orchid after a loss in my <br>family. It is beautiful and <br>I think of my loved one <br>whenever it blooms. 
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="h3">
+			&#9733 &#9733 &#9733 &#9733 &#9734
+			</div>
+			<div class="h4">
+			John from Harrisburg <br>We hired Laine’s Lilies for<br>  our wedding and were<br> completely satisfied. The <br> flowers were stunning and <br>the staff was amazing!
+			</div>
+		</div>
 	</div>
 
-	<div class="h4">
-		Megan from Elizabethtown <br>
-		Laine’s Lilies did an amazing <br>job arranging centerpieces<br> for my sister’s baby shower <br>and helped develop my vision <br>and I couldn’t be happier!
-	</div>
-</div>
-
-<div class="column">
-	<div class="h3">
-		&#9733 &#9733 &#9733 &#9733 &#9733
-	</div>
-
-	<div class="h4">
-		Emily from Middletown <br> A friend sent me a potted <br>orchid after a loss in my <br>family. It is beautiful and <br>I think of my loved one <br>whenever it blooms. 
-	</div>
-</div>
-
-
-<div class="column">
-	<div class="h3">
-		&#9733 &#9733 &#9733 &#9733 &#9734
-	</div>
-
-	<div class="h4">
-		John from Harrisburg <br>We hired Laine’s Lilies for<br>  our wedding and were<br> completely satisfied. The <br> flowers were stunning and <br>the staff was amazing!
-	</div>
-</div>
-</div>
 
 <div class="line"></div>
-
-<div class="content">
-	<div class="column2">
-		<div class="h3">
-		Today's Bouquets
-		</div>
-		<div class="h4">
-		Shop our ready to go daily fresh cut bouqets.  Store pick-up and delivery <br>are available.
-		</div>
-		<div class="button">
-		Shop Now
-		</div>
+<br>
+	<div class="content">
+		<div class="column">
+			<div class="h3">Today's Bouquets</div>
+			<div class="h4">
+			Shop our ready to go daily fresh cut bouqets.  Store pick-up and delivery are available.</div>
+			<a href="todaysbouquets.html">
+			<div class="button">Shop Now</div></a>
 		</div>
 
-		<div class="twopicture">
+		<div class="onepicture">
 		<img src="images/orangetulips.jpg" alt="Orange tulips with yellow tips in a metal container with wooden handle for vase sitting on a wooden table with a stone wall in the background"
-		width="500">
+		width="50%"></div>
 	</div>
-</div>
 
 <div class="line"></div>
+<br>
+	<div class="content">
+		<div class="onepicture">
+			<img src="images\flowervase.jpg" alt="large planter vase filled with white and pink roses, yellow gerbera daisies, yellow buton mums, and ivy"width="50%"></div>
 
-<div class="content">
-	<div class="twopicture">
-		<img src="images\flowervase.jpg" alt="large planter vase filled with white and pink roses, yellow gerbera daisies, yellow buton mums, and ivy"
-		width="500">
-	</div>
-
-	<div class="column2">
-		<div class="h3">
-		Place An Order
-		</div>
-
-		<div class="h4">
-		Shop a variety of beautiful floral <br> arrangements for every occasion.
-		</div>
-
-		<div class="button">
-		Shop Now
+		<div class="column">
+			<div class="h3">Place An Order</div>
+			<div class="h4">
+			Shop a variety of beautiful floral arrangements for every occasion.
+			</div>
+			<a href="placeanorder.html">
+			<div class="button">Shop Now</div></a>
 		</div>
 	</div>
-</div>
 
 <div class="line"></div>
+<br>
+	<div class="content">
+		<div class="column2">
+			<div class="h3">Large Event Information</div>
 
-<div class="content">
-	<div class="column2">
-		<div class="h3">
-		Large Event Information
+			<div class="h4">
+			Shop a variety of beautiful floral arrangements for every occasion.
+			</div>
+			<a href="largeeventinfo.html">
+			<div class="button">Shop Now</div></a>
 		</div>
 
-		<div class="h4">
-		Shop a variety of beautiful floral <br> arrangements for every occasion.
-		</div>
-
-		<div class="button">
-		Shop Now
-		</div>	
-	</div>
-
-	<div class="twopicture">
+		<div class="onepicture">
 		<img src="images\bigparty.jpg" alt=" dining table with many vases of pink roses and hydrangeas"
-		width="500">
+		width="50%">
+		</div>
 	</div>
-</div>
 
 
 <div class="line"></div>
 
 	<div class="h3">
-		Growing in the Greenhouse
+		In the Greenhouse
 	</div>
 
-<div class="content3">	
-	<div class="button">
-		Join Our Mailing List
+	<div class="content">	
+		<div class="button">
+		Join Our Mailing List</div>
+		<a href="contactus.html">
+		<div class="button">
+		Contact Us</div> </a>
 	</div>
 
-	<div class="button">
-		Contact Us
-	</div>
-</div>	
 
 <div class="line"></div>
 
 <div class="content2">
 	<div class="footer">
-		<div class="column">
-		<div class="h5">Laine's Lilies</div>
+		<div class="column"> <a href="index.html">
+		<div class="h5">Laine's Lilies</div></a>
 		<div class="h7"> 123 Linden Street <br>
 		Big City 12345 <br> 717-555-1234 <br> 2025 <br> Privacy - Terms</div>
 		</div>
 	</div>
 
 	<div class="footer">
-		<div class="column">
-		<div class="h6">My Garden Basket</div>
-		<div class="h7">Checkout</div>
-		</div>
-	</div>
-
-	<div class="footer">
-		<div class="column">
-		<div class="h6">Large Event Info</div>
-		<div class="h7">Shop Now</div>
-		</div>
-	</div>
-
-	<div class="footer">
-		<div class="column">
-		<div class="h6">Place an Order</div>
-		<div class="h7">Shop Now</div>
-		</div>
-	</div>
-
-	<div class="footer">
-		<div class="column">
+		<div class="column"><a href="todaysbouquets.html">
 		<div class="h6">Today's Bouquets</div>
-		<div class="h7">Shop Now</div>
+		<div class="h7">Shop Now</div></a>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="column"><a href="placeanorder.html">
+		<div class="h6">Place an Order</div>
+		<div class="h7">Shop Now</div></a>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="column"><a href="largeeventinfo">
+		<div class="h6">Large Event Info</div>
+		<div class="h7">Shop Now</div></a>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="column"><a href="mygardenbasket.html">
+		<div class="h6">My Garden Basket</div>
+		<div class="h7">Checkout</div></a>
 		</div>
 	</div>
 </div>
