@@ -4,104 +4,39 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-		<style>
-			a:link{
-				color:black;
-				background-color:transparent;
-				text-decoration: none;
-			}
-			a:hover{
-				color: #3C6E71;
-				background-color:transparent;
-				text-decoration: underline;
-			}
-			input[type="text"]{
-				height: 22px;
-				background-color: #D9D9D9;
-				border-style: none;
-				max-width: 75%;
-			}
-			input[type="tel"]{
-				height: 22px;
-				background-color: #D9D9D9;
-				border-style: none;
-				max-width: 75%;
-			}
-			input[type="email"]{
-				height: 22px;
-				background-color: #D9D9D9;
-				border-style: none;
-				max-width: 75%;
-			}
-			input[type="date"]{
-				height: 22px;
-				background-color: #D9D9D9;
-				border-style: none;
-				font-family: 'Roboto';
-			}
-			input[type="checkbox"]{
-				height: 18px;
-				background-color: #D9D9D9;
-				border-style: none;
-				accent-color: #284B63;
-				font-family: 'Roboto';
-			}
-			input[type="message"]{
-				height: 100px;
-				background-color: #D9D9D9;
-				border-style: none;
-				max-width: 200%;
-			]
-			@media only screen and (min-width: 380px){
-				.container {
-				flex-direction: row;
-				flex-wrap: wrap;
-				}
-				.container .content-block{
-				width: 48.5%;
-				}
-			}
-			@media only screen and (min-width: 730px){
-				.container{
-				padding: 20px;
-				}
-				.container .content-block{
-				width: 32.5%;
-				}
-			}
-		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<head>
  
 <body>
 
 	<div class="header">
 		<a href="index.html">
-		<div class="h5">Laine's Lilies</div></a>
+		<h5>Laine's Lilies<h5> </a>
 		<a href="mygardenbasket.html">
-		<div class="h6">My Garden Basket</div> </a>
+		<h6>My Garden Basket</h6> </a>
 		<a href="largeeventinfo.html">
-		<div class="h6">Large Event Info</div></a>
+		<h6>Large Event Info</h6></a>
 		<a href="placeanorder.html">
-		<div class="h6">Place an Order</div></a>
+		<h6>Place an Order</h6></a>
 		<a href="todaysbouquets.html">
-		<div class="h6">Today's Bouquets</div></a>
+		<h6>Today's Bouquets</h6></a>
 	</div>	
 
-<div class="h1"> Payment Information</div>
+<h1> Payment Information</h1>
 
-<br>
+
 
 <div class="box">
 
 <form action="/action/page.php" method="POST">
 
-	<div class="h8"><b>Your Information</b></div>
+	<h8><b>Your Information</b></h8>
 
-	<div class="content">
+	<div class="content3">
 		<div class="column2">
 			<label for="fname" class="h8" >First Name:</label>
 			<input type="text" id="fname" name="fname">
-		<br>
+
 			<label for="pnumber" class="h8" >Phone Number:</label>
 			<input type="text" id="pnumber" name="pnumber"placeholder="(123)456-7890">
 		</div>
@@ -109,7 +44,7 @@
 		<div class="column2">
 			<label for="lname" class="h8"> Last Name: </label>
 			<input type="text" id="lname" name="lname">
-		<br>
+		
 			<label for="email" class="h8"> Email Address: </label>
 			<input type="email" id="email" name="emailaddress">
 		</div>
@@ -117,14 +52,14 @@
 
 <br>
 
-	<div class="h8"> <b>Payment Information</b></div>
+	<h8> <b>Payment Information</b></h8>
 
-<br>
 
-	<div class="content">
+
+	<div class="content3">
 		<div class="column2">
-			<label for="fname" class="h8" >Credit Card Number:</label>
-			<input type="tel" id="fname" name="fname"  maxlength="16">
+			<label for="Credit Card" class="h8" >Credit Card Number:</label>
+			<input type="tel" id="Credit Card" name="Credit Card"  maxlength="16">
 		</div>
 
 		<div class="column2">
@@ -137,9 +72,9 @@
 			<input type="tel" id="CCV" name="CCV" placeholder="000" maxlength="3"required>
 		</div>
 	</div>
-<br>
+
 <div class="h8"> <b>Getting Your Order</b></div>
-<br>
+
 	<div class="content3">
 		<div class="container">
 			<input type="checkbox" name="contact" value="Pick Up" id="Pick Up">
@@ -152,17 +87,16 @@
 		</div>
 	</div>
 
-<br>
 
-<div class="h8"> <b>Review Your Order</b></div>
+<h8> <b>Review Your Order</b></h8>
 
-<div class="content">
+<button class="content">
 <a href="ordercomplete.html">	
 	<div class="button"> 
 		Submit 
-	</div> </a>
+	</button> </a>
 </div>
-<br>
+
 </div>
 	
 
@@ -174,37 +108,40 @@
 <div class="content2">
 	<div class="footer">
 		<div class="column"> <a href="index.html">
-		<div class="h5">Laine's Lilies</div></a>
-		<div class="h7"> 123 Linden Street <br>
-		Big City 12345 <br> 717-555-1234 <br> 2025 <br> Privacy - Terms</div>
+			<h6>Laine's Lilies<br>
+			123 Linden Street <br>
+			Big City, PA 12345 <br> 
+			717-555-1234 <br> 
+			©2025 <br> 
+			Privacy - Terms</h6></a>
 		</div>
 	</div>
 
 	<div class="footer">
 		<div class="column"><a href="todaysbouquets.html">
-		<div class="h6">Today's Bouquets</div>
-		<div class="h7">Shop Now</div></a>
+		<h6>Today's Bouquets<br>
+		Shop Now</h6></a>
 		</div>
 	</div>
 
 	<div class="footer">
 		<div class="column"><a href="placeanorder.html">
-		<div class="h6">Place an Order</div>
-		<div class="h7">Shop Now</div></a>
+		<h6>Place an Order<br>
+		Shop Now</h6></a>
 		</div>
 	</div>
 
 	<div class="footer">
 		<div class="column"><a href="largeeventinfo">
-		<div class="h6">Large Event Info</div>
-		<div class="h7">Shop Now</div></a>
+		<h6>Large Event Info<br>
+		Shop Now</h6></a>
 		</div>
 	</div>
 
 	<div class="footer">
 		<div class="column"><a href="mygardenbasket.html">
-		<div class="h6">My Garden Basket</div>
-		<div class="h7">Checkout</div></a>
+		<h6>My Garden Basket<br>
+		Checkout</h6></a>
 		</div>
 	</div>
 </div>
