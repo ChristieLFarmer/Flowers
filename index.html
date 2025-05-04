@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE   html>
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">
@@ -9,19 +9,15 @@
  
 <body>
 
-	<div class="header">
-		<a href="index.html">
-		<h5>Laine's Lilies<h5> </a>
-		<a href="mygardenbasket.html">
-		<h6>My Garden Basket</h6> </a>
-		<a href="largeeventinfo.html">
-		<h6>Large Event Info</h6></a>
-		<a href="placeanorder.html">
-		<h6>Place an Order</h6></a>
-		<a href="todaysbouquets.html">
-		<h6>Today's Bouquets</h6></a>
-	</div>	
-
+<nav aria-label="Main navigation">
+	<ul>
+		<li><a href="index.html" class="brand">Laine's Lilies</a> </li>
+		<li><a href="todaysbouquets.html">Today's Bouquets</a></li>
+		<li><a href="placeanorder.html">Place an Order</a> </li>
+		<li><a href="largeeventinfo.html">Large Event Info</a> </li>
+		<li><a href="mygardenbasket.html">My Garden Basket</a> </li>
+	</ul>
+</nav>
 
 	<h1>Laine's Lilies</h1>
 
@@ -30,10 +26,12 @@
 	</h2>
 
 	<div class="content">	
-		<a href="todaysbouquets.html">	
+
+		<a href="todaysbouquets.html">
 		<button class="button"> 
-		Today's Bouquets 
-		</button> </a>
+		Today's Bouquets</button></a>
+
+
 		<a href="placeanorder.html">
 		<button class="button">
 		Place an Order
@@ -90,17 +88,20 @@
 			<button class="button">Shop Now</button></a>
 		</div>
 
+		<div class="column">
 		<div class="onepicture">
-		<img src="images/orangetulips.jpg" alt="Orange tulips with yellow tips in a metal container with wooden handle for vase sitting on a wooden table with a stone wall in the background"
-		width="50%"></div>
+		<img src="images/orangetulips.jpg" alt="Orange tulips with yellow tips in a metal container"
+		width="60%"></div>
+	</div>
 	</div>
 
 <div class="line"></div>
 
 	<div class="content">
+		<div class="column">
 		<div class="onepicture">
-			<img src="images\flowervase.jpg" alt="large planter vase filled with white and pink roses, yellow gerbera daisies, yellow buton mums, and ivy"width="50%"></div>
-
+			<img src="images\flowervase.jpg" alt="large planter vase filled with white and pink roses, yellow gerbera daisies, yellow buton mums, and ivy"width="60%"></div>
+		</div>
 		<div class="column">
 			<h3>Place An Order</h3>
 			<h4>
@@ -122,11 +123,12 @@
 			<a href="largeeventinfo.html">
 			<button class="button">Large Event Info</button></a>
 		</div>
-
+		<div class="column">
 		<div class="onepicture">
 		<img src="images\bigparty.jpg" alt=" dining table with many vases of pink roses and hydrangeas"
-		width="50%">
+		width="60%">
 		</div>
+	</div>
 	</div>
 
 
@@ -149,50 +151,40 @@
 
 <div class="line"></div>
 
-<div class="content2">
-	<div class="footer">
-		<div class="column"> <a href="index.html">
-			<h6>Laine's Lilies<br>
-			123 Linden Street <br>
-			Big City, PA 12345 <br> 
-			717-555-1234 <br> 
-			©2025 <br> 
-			Privacy - Terms</h6></a>
-		</div>
-	</div>
 
-	<div class="footer">
-		<div class="column"><a href="todaysbouquets.html">
-		<h6>Today's Bouquets<br>
-		Shop Now</h6></a>
-		</div>
-	</div>
+<nav aria-label="Site footer">
+	<ul>
+		<li class="footer-column">
+			<address>
+				Laine's Lilies<br>
+				123 Linden Street <br>
+				Big City, PA 12345 <br>
+				717.555.1234<br>	
+				©2025<br> 
+				Privacy-Terms
+			</address>
+		</li>
 
-	<div class="footer">
-		<div class="column"><a href="placeanorder.html">
-		<h6>Place an Order<br>
-		Shop Now</h6></a>
-		</div>
-	</div>
+		<li class="footer-column">
+			<a href="todaysbouquets.html">Today's Bouquets<br>Shop Now</a>
+		</li>
 
-	<div class="footer">
-		<div class="column"><a href="largeeventinfo">
-		<h6>Large Event Info<br>
-		Shop Now</h6></a>
-		</div>
-	</div>
+		<li class="footer-column">
+			<a href="placeanorder.html">Place an Order<br>Shop Now</a>
+		</li>
 
-	<div class="footer">
-		<div class="column"><a href="mygardenbasket.html">
-		<h6>My Garden Basket<br>
-		Checkout</h6></a>
-		</div>
-	</div>
-</div>
 
+		<li class="footer-column">
+			<a href="largeeventinfo.html">Large Event Info<br>Tell Us About You</a>
+		</li>
+
+		<li class="footer-column">
+			<a href="mygardenbasket.html">My Garden Basket<br>Review Basket</a>
+		</li>
+
+	</ul>
+</nav>
 
 </body>
 </html>
 		
-
-

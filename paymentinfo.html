@@ -5,22 +5,19 @@
 		<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<head>
+	</head>
  
 <body>
 
-	<div class="header">
-		<a href="index.html">
-		<h5>Laine's Lilies<h5> </a>
-		<a href="mygardenbasket.html">
-		<h6>My Garden Basket</h6> </a>
-		<a href="largeeventinfo.html">
-		<h6>Large Event Info</h6></a>
-		<a href="placeanorder.html">
-		<h6>Place an Order</h6></a>
-		<a href="todaysbouquets.html">
-		<h6>Today's Bouquets</h6></a>
-	</div>	
+<nav aria-label="Main navigation">
+	<ul>
+		<li><a href="index.html" class="brand">Laine's Lilies</a> </li>
+		<li><a href="todaysbouquets.html">Today's Bouquets</a></li>
+		<li><a href="placeanorder.html">Place an Order</a> </li>
+		<li><a href="largeeventinfo.html">Large Event Info</a> </li>
+		<li><a href="mygardenbasket.html">My Garden Basket</a> </li>
+	</ul>
+</nav>
 
 <h1> Payment Information</h1>
 
@@ -28,80 +25,131 @@
 
 <div class="box">
 
-<form action="/action/page.php" method="POST">
+<div class="form">
 
-	<h8><b>Your Information</b></h8>
+	<h4 class="left-align"><b>Your Information</b></h4>
 
-	<div class="content3">
+	<div class="content">
 		<div class="column2">
-			<label for="fname" class="h8" >First Name:</label>
-			<input type="text" id="fname" name="fname">
+			<label for="your-fname">First Name:</label>
+			<input type="text" id="your-fname" name="your-fname">
 
-			<label for="pnumber" class="h8" >Phone Number:</label>
-			<input type="text" id="pnumber" name="pnumber"placeholder="(123)456-7890">
+			<label for="your-pnumber" >Phone Number:</label>
+			<input type="text" id="your-pnumber" name="your-pnumber "placeholder="(123)456-7890">
+
+			
 		</div>
 
 		<div class="column2">
-			<label for="lname" class="h8"> Last Name: </label>
-			<input type="text" id="lname" name="lname">
+			<label for="your-lname" > Last Name: </label>
+			<input type="text" id="your-lname" name="your-lname">
 		
-			<label for="email" class="h8"> Email Address: </label>
-			<input type="email" id="email" name="emailaddress">
+			<label for="your-email"> Email Address: </label>
+			<input type="email" id="your-email" name="your email">
 		</div>
 	</div>
 
-<br>
 
-	<h8> <b>Payment Information</b></h8>
+
+	<h4 class="left-align"> <b>Payment Information</b></h4>
 
 
 
 	<div class="content3">
 		<div class="column2">
-			<label for="Credit Card" class="h8" >Credit Card Number:</label>
-			<input type="tel" id="Credit Card" name="Credit Card"  maxlength="16">
+			<label for="Credit Card" >Credit Card Number:</label>
+			<input type="tel" id="Credit-Card" name="Credit-Card"  maxlength="16">
 		</div>
 
 		<div class="column2">
-			<label for="Exp Date" class="h8" >Exp. Date:</label>
-			<input type="tel" id="Exp Date" name="date" placeholder="00/00" maxlength="5">
+			<label for="Exp-Date" class="h8" >Exp. Date:</label>
+			<input type="tel" id="Exp-Date" name="date" placeholder="00/00" maxlength="5">
 		</div>
 
 		<div class="column">
 			<label for="CCV" class="h8" >CVV:</label>
-			<input type="tel" id="CCV" name="CCV" placeholder="000" maxlength="3"required>
+			<input type="tel" id="CCV" name="CCV" placeholder="000" maxlength="3">
 		</div>
 	</div>
 
-<div class="h8"> <b>Getting Your Order</b></div>
+<h4 class="left-align"> <b>Getting Your Order</b></h4>
 
 	<div class="content3">
 		<div class="container">
-			<input type="checkbox" name="contact" value="Pick Up" id="Pick Up">
-			<label for="Pick Up" class="h8">Pick Up</label>
+			<input type="checkbox" name="contact" value="Pick-Up" id="Pick-Up">
+			<label for="Pick Up">Pick Up</label>
 		</div>
 
 		<div class="container">
 			<input type="checkbox" name="contact" value="Delivery" id="Delivery">
-			<label for="Text" class="h8"> Delivery</label>
+			<label for="Delivery" > Delivery</label>
+		</div>
+	</div>
+
+<h4 class="left-align"> <b>Delivery Information</b></h4>
+
+<div class="content3">
+		<div class="column2">
+			<label for="fname" >First Name:</label>
+			<input type="text" id="fname" name="fname">
+
+			<label for="pnumber" >Phone Number:</label>
+			<input type="text" id="pnumber" name="pnumber "placeholder="(123)456-7890">
+
+			<label for="City/State">City/State</label>
+			<input type="text" id="City/State" name="City/State">
+		</div>
+
+		<div class="column2">
+			<label for="lname"> Last Name: </label>
+			<input type="text" id="lname" name="lname">
+		
+			<label for="address" > Street Address: </label>
+			<input type="text" id="address" name="address">
+
+			<label for="Zip-Code" >Zip Code</label>
+			<input type="text" id="Zip-Code" name="Zip-Code">
 		</div>
 	</div>
 
 
-<h8> <b>Review Your Order</b></h8>
+<h4 class="left-align"> <b>Review Your Order</b></h4>
 
-<button class="content">
-<a href="ordercomplete.html">	
-	<div class="button"> 
-		Submit 
-	</button> </a>
+	<div class="price">
+	<h4>Basket of Yellow Daisies </h4>
+		<h4>$9.99</h4>
+	</div>
+		<img src="images\sample.jpg" alt="basket of yellow daisies" width="20%">
+			<p> Get Well Soon Card<p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+
+<div class="price">
+	<h4>Pick Up</h4>
+	<h4> $00.00 </h4>
+</div>
+
+<div class="price">
+	<h4>Tax:</h4>
+	<h4> $00.60 </h4>
+</div>
+
+<div class="price">
+	<h4>Total</h4>
+	<h4> $10.59 </h4>
+</div>
+
+
+<div class="content">
+	<a href="ordercomplete.html">
+	<button class="button">Submit 
+	 </button></a>
 </div>
 
 </div>
 	
 
 
-</form>
+</div>
 
 <div class="line"></div>
 
@@ -132,7 +180,7 @@
 	</div>
 
 	<div class="footer">
-		<div class="column"><a href="largeeventinfo">
+		<div class="column"><a href="largeeventinfo.html">
 		<h6>Large Event Info<br>
 		Shop Now</h6></a>
 		</div>

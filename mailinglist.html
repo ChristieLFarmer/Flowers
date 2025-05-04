@@ -5,61 +5,60 @@
 		<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<head>
+	</head>
  
 <body>
 
-		<div class="header">
-		<a href="index.html">
-		<h5>Laine's Lilies<h5> </a>
-		<a href="mygardenbasket.html">
-		<h6>My Garden Basket</h6> </a>
-		<a href="largeeventinfo.html">
-		<h6>Large Event Info</h6></a>
-		<a href="placeanorder.html">
-		<h6>Place an Order</h6></a>
-		<a href="todaysbouquets.html">
-		<h6>Today's Bouquets</h6></a>
-	</div>	
+<nav aria-label="Main navigation">
+	<ul>
+		<li><a href="index.html" class="brand">Laine's Lilies</a> </li>
+		<li><a href="todaysbouquets.html">Today's Bouquets</a></li>
+		<li><a href="placeanorder.html">Place an Order</a> </li>
+		<li><a href="largeeventinfo.html">Large Event Info</a> </li>
+		<li><a href="mygardenbasket.html">My Garden Basket</a> </li>
+	</ul>
+</nav>
 
 <h1> Join Our Mailing List</h1>
 
 <h2> Complete the form and be kept up to date with our monthly specials!</h2>
  
 <div class="box">
-<form action="/action/page.php">
-	<h8><b>Your Information</b></h8>
+<div class="form">
+	<h4 class="left-align"><b>Your Information</b></h4>
 
 		<div class="content3">
 			<div class="column2">
-				<label for="fname" class="h8" >First Name:</label>
+				<label for="fname"  >First Name:</label>
 				<input type="text" id="fname" name="fname">
 		
 				<label for="pnumber" class="h8" >Phone Number:</label>
-				<input type="text" id="pnumber" name="pnumber">
+				<input type="tel" id="pnumber" name="pnumber" placeholder="(123)456-7890">
 			</div>
 
 			<div class="column2">
-				<label for="lname" class="h8"> Last Name: </label>
+				<label for="lname" > Last Name: </label>
 				<input type="text" id="lname" name="lname">
 	
-				<label for="eaddress" class="h8"> Email Address: </label>
-				<input type="text" id="eaddress" name="eaddress">
+				<label for="email" > Email Address: </label>
+				<input type="text" id="email" name="email">
 			</div>
 		</div>
+
+
 	<input type="checkbox" name="approval" value="approval" id="approval">
-			<label for="approval" class="h8">I consent to receive emails from Laine's Lilies</label>
+			<label for="approval" >I consent to receive emails from Laine's Lilies</label>
 
-<content>
-	<a href="thankyoumailinglist.html">	
-		<button class="button"> 
-		Submit 
-		</button> </a>
-</content>
+<div class="content">
+	<a href="welcome.html">	
+		<button class="button"> Submit </button> </a>
+</div>
 
 
-</form>
-</div>		
+</div>
+</div>
+
+	
 
 <div class="line"></div>
 
@@ -90,7 +89,7 @@
 	</div>
 
 	<div class="footer">
-		<div class="column"><a href="largeeventinfo">
+		<div class="column"><a href="largeeventinfo.html">
 		<h6>Large Event Info<br>
 		Shop Now</h6></a>
 		</div>

@@ -15,6 +15,26 @@ body{
 		background-color:transparent;
 		text-decoration: underline;
 		}
+	html{
+		font-size: 1em;
+		}
+	h1 {
+	font-family: 'Homemade Apple';
+	font-size: 26px;
+	text-align:center;
+	padding-top:30px;
+	font-size: 2rem;
+		}
+	h2 {
+	font-family: 'Roboto';
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	padding-top:20px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 1rem;
+}
 	@media only screen and (min-width: 380px){
 		.container {
 			flex-direction: row;
@@ -23,6 +43,15 @@ body{
 		.container .content-block{
 			width: 48.5%;
 			}
+		.content {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		h1{
+			font-size: 1.5rem;
+		}
+		h2{
+			font-size: 1rem;
 		}
 	@media only screen and (min-width: 730px){
 		.container{
@@ -31,12 +60,100 @@ body{
 		.container .content-block{
 			width: 32.5%;
 			}
+		.content {
+			display: flex;
+			flex-wrap: nowrap;
 		}
-	input[type="text"],
-	input[type="tel"],
-	input[type="email"],
-	input[type="date"],
-	input[type="Credit Card"],
+		h1{
+			font-size: 2.5rem;
+		}
+		h2{
+			font-size: 1.5rem;
+		}
+		}
+
+
+
+	ul{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+		overflow: hidden;
+		background-color: #ffffff;
+	}
+
+	li{
+		display: flex;
+		flex-direction: row;
+		font-family: Roboto;
+	}
+
+	li a{
+		display: flex;
+		color: #000000;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+
+	li a:hover:not(.active) {
+		color: #284B63;
+	}
+
+	li logo{
+		font: 'Homemade Apple';
+	}
+
+	.brand {
+		font-family: 'Homemade Apple';
+	}
+
+
+	.footer-column {
+		display:flex;
+		flex-direction: column;
+		align-content: left;
+		font-family: 'Roboto';
+	}
+
+
+	label{
+		font-family: Roboto;
+		font-size: 16px;
+	}
+	input[type="text"]{
+		font-family: 'Roboto';
+		font-size: 16px;
+		background-color: #D9D9D9;
+		border-style: none;
+	}
+	input[type="tel"]{
+		font-family: 'Roboto';
+		font-size: 16px;
+		background-color: #D9D9D9;
+		border-style: none;
+	}
+	input[type="email"]{
+		font-family: 'Roboto';
+		font-size: 16px;
+		background-color: #D9D9D9;
+		border-style: none;
+	}
+	input[type="date"]{
+		font-family: 'Roboto';
+		font-size: 16px;
+		background-color: #D9D9D9;
+		border-style: none;
+	}
+	input[type="Credit Card"]{
+		font-family: 'Roboto';
+		font-size: 16px;
+		background-color: #D9D9D9;
+		border-style: none;
+	}
 	textarea{
 		height: 22px;
 		background-color: #D9D9D9;
@@ -48,7 +165,7 @@ body{
 		background-color: #D9D9D9;
 		height: 100px;
 		font-family: 'Roboto';
-		max-width: 90%;
+		max-width: 100%;
 		max-height: 200px;
 		border-style: hidden;
 		margin-bottom: 25px;
@@ -57,56 +174,31 @@ body{
 		width: 16px;
 		height: 16px;
 		accent-color: #284B63;
-	}
-	
-}
-
-.header{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height:60px;
-	width: 100%;
-	background-color: #ffffff;
+	}	
 }
 
 
-
-h1, .h1{
-	font-family: 'Homemade Apple';
-	font-size: 26px;
-	text-align:center;
-	padding-top:30px;
-}
-
-h2, .h2{
-	font-family: 'Roboto';
-	font-size: 20px;
-	display: flex;
-	justify-content: center;
-	padding-top:20px;
-	padding-bottom: 20px;
-	text-align: center;
-}
-
-h3, .h3{
+h3 {
 	font-family: 'Homemade Apple';
 	font-size: 18px;
 	display: flex;
 	justify-content: center;
 }
 
-h4, .h4{
+h4 {
 	font-family: 'Roboto';
 	font-size: 16px;
 	display: flex;
 	justify-content: center;
 	padding-top:10px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	max-width: 60%;
 }
 
-h5, .h5{
+h5 {
 	font-family: 'Homemade Apple';
 	font-size: 14px;
 	float: left;
@@ -116,7 +208,7 @@ h5, .h5{
 	margin-bottom: 0px;
 }
 
-h6, .h6{
+h6 {
 	font-family: 'Roboto';
 	font-size: 16px;
 	float: right;
@@ -126,24 +218,28 @@ h6, .h6{
 	display: flex;
 }
 
-h7, .h7{
+p {
 	font-family: 'Roboto';
-	font-size: 16px;
+	font-size: 14px;
+	max-width: 40%;
 }
 
-h8, .h8{
-	font-family: 'Roboto';
-	font-size: 16px;
+.left-align{
+	display: block;
+	text-align: left;
 }
 
-.content{
+.none{
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.price{
 	display: flex;
-	justify-content: space-evenly;
-	padding-top: 10px;
-	padding-bottom:20px;
-	height:100%;
-	width:100%;
+	justify-content: space-between;
+	max-width: 50%;
 }
+
 
 .button{
 	font-family: 'Roboto', sans-serif;
@@ -157,9 +253,18 @@ h8, .h8{
 	text-align:center;
 	padding: 0;
 	margin-bottom: 25px;
-	display: flex;
+	display:flex;
 	align-items: center;
 	justify-content:center;
+}
+
+.content{
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 10px;
+	padding-bottom:20px;
+	height:100%;
+	width:100%;
 }
 
 .content2{
@@ -175,6 +280,7 @@ h8, .h8{
 .content3{
 	display: flex;
 	justify-content: flex-start;
+
 	gap: 40px;
 	padding-top: 15px;
 	padding-bottom:15px;
@@ -197,10 +303,7 @@ h8, .h8{
 	margin-bottom:20px;
 }
 
-.footer{	
-	display: flex;
-	justify-content: space-around;
-}
+
 
 .column{
 	display: flex;
@@ -215,17 +318,22 @@ h8, .h8{
 	flex-direction:column;
 	height: 100%;
 	width: 100%;
+	margin-right: 5px;
 }
 
 .spacer{
-	height: 400px;
+	height: 300px;
 }
 
 .container{
-	width: 200px;
-	height: 18px;
+	width: 30%;
+	height: 100%;
 	display: flex;
 	gap: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .container2{
@@ -248,6 +356,11 @@ h8, .h8{
 	padding: 20px;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
+}
+
+.form{
+	diplay: flex;
+	width: 70%;
 }
 
 

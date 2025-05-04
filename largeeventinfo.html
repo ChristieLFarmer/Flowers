@@ -6,21 +6,17 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-	<head>
+	</head>
  
-<body>
-	<div class="header">
-		<a href="index.html">
-		<h5>Laine's Lilies<h5> </a>
-		<a href="mygardenbasket.html">
-		<h6>My Garden Basket</h6> </a>
-		<a href="largeeventinfo.html">
-		<h6>Large Event Info</h6></a>
-		<a href="placeanorder.html">
-		<h6>Place an Order</h6></a>
-		<a href="todaysbouquets.html">
-		<h6>Today's Bouquets</h6></a>
-	</div>	
+<nav aria-label="Main navigation">
+	<ul>
+		<li><a href="index.html" class="brand">Laine's Lilies</a> </li>
+		<li><a href="todaysbouquets.html">Today's Bouquets</a></li>
+		<li><a href="placeanorder.html">Place an Order</a> </li>
+		<li><a href="largeeventinfo.html">Large Event Info</a> </li>
+		<li><a href="mygardenbasket.html">My Garden Basket</a> </li>
+	</ul>
+</nav>
 
 
 <h1> Large Event Information</h1>
@@ -31,47 +27,54 @@
 
 
 
-<form action="/action/page.php">
+<div class="form">
 
-<h8><b>Contact Information</b></h8>
+<h4 class="left-align"><b>Contact Information</b></h4>
 	<div class="content3">
 		<div class="column2">
-			<label for="fname" class="h8" >First Name:</label>
+			<div class="container">
+			<label for="fname" >First Name:</label>
 			<input type="text" id="fname" name="fname">
-		
-			<label for="phone" class="h8" >Phone Number:</label>
+			</div>
+			<div class="container">
+			<label for="phone" >Phone Number:</label>
 			<input type="tel" id="phone" name="phone">
+			</div>
 		</div>
 
 		<div class="column2">
-			<label for="lname" class="h8"> Last Name: </label>
+			<div class="container">
+			<label for="lname" > Last Name: </label>
 			<input type="text" id="lname" name="lname">
-	
-			<label for="email" class="h8"> Email Address: </label>
-			<input type="email" id="email" name="email">
+			</div>
+
+			<div class="container">
+			<label for="email" > Email Address: </label>
+			<input type="text" id="email" name="email">
+			</div>
 		</div>
 	</div>
 
 
 
-<h8> <b>Preferred Method of Contact</b></h8>
+<h4 class="left-align"> <b>Preferred Method of Contact</b></h4>
 
 	<div class="content3">
 		<div class="container">
 			<input type="checkbox" name="contact" value="Phone" id="Phone">
-			<label for="Phone" class="h8">Phone</label>
+			<label for="Phone">Phone</label>
 		</div>
 		<div class="container">
 			<input type="checkbox" name="contact" value="Text" id="Text">
-			<label for="Text" class="h8"> Text</label>
+			<label for="Text"> Text</label>
 		</div>
 		<div class="container">
 			<input type="checkbox" name="Email" value="Email" id="Email">
-			<label for="Email" class="h8">Email</label>
+			<label for="Email">Email</label>
 		</div>
 	</div>
 
-<h8><b> Date of Event</b></h8>
+<h4 class="left-align"><b> Date of Event</b></h4>
 
 	<div class="content3">
 		<div class="container">
@@ -81,205 +84,206 @@
 	</div>
 
 
-<h8> <b>Type of Event - Please check 1 box</b></h8>
+<h4 class="left-align"> <b>Type of Event - Please check 1 box</b></h4>
+
 
 	<div class="content3">
 		<div class="container">
 			<input type="checkbox" name="event" value="Baby Shower" id="Baby Shower">
-			<label for="Baby Shower" class="h8">Baby Shower</label>
+			<label for="Baby Shower">Baby Shower</label>
 		</div>
 
 		<div class="container">
 			<input type="checkbox" name="event" id="Bridal Shower" value="Bridal Shower">
-			<label for="Bridal Shower" class="h8">Bridal Shower</label>
+			<label for="Bridal Shower" >Bridal Shower</label>
 		</div>	
 
 		<div class="container">
 			<input type="checkbox" name="event" value="Anniversary Party" id="Anniversary Party">
-			<label for="Anniversary Party" class="h8">Anniversary Party</label>	
+			<label for="Anniversary Party">Anniversary Party</label>	
 		</div>
 	</div>
 
 	<div class="content3">
 		<div class="container">
 			<input type="checkbox" name="event" value="Birthday Party" id="Birthday Party">
-			<label for="Birthday Party" class="h8">Birthday Party</label>
+			<label for="Birthday Party">Birthday Party</label>
 		</div>
 
 		<div class="container">
 			<input type="checkbox" name="event" value="Wedding" id="Wedding">
-			<label for="Wedding" class="h8">Wedding</label>
+			<label for="Wedding" >Wedding</label>
 		</div>
 
 		<div class="container">
-			<input type="checkbox" name="event" value="Other" id="Other">
-			<label for="Other" class="h8">Other</label>
+			<input type="checkbox" name="event" value="Other" id="Other Event">
+			<label for="Other Event" >Other</label>
 		</div>
 	</div>
 
 
 
-<h8> <b>Flower Needs - Please check all that apply</b></h8>
+<h4 class="left-align"> <b>Flower Needs - Please check all that apply</b></h4>
 
 	<div class="content3">
 		<div class="container">
 			<input type="checkbox" name="needs" value="Corsages" id="Corsages">
-			<label for="text" class="h8">Corsages</label>
+			<label for="Corsages">Corsages</label>
 		</div>
 
 		<div class="container">
 			<input type="checkbox" name="needs" value="Center Pieces" id="Center Pieces">
-			<label for="text" class="h8">Center Pieces</label>
+			<label for="Center Pieces" >Center Pieces</label>
 		</div>	
 
 		<div class="container">
 			<input type="checkbox" name="needs" value="Alter Arrangements" id="Alter Arrangements">
-			<label for="text" class="h8">Alter Arrangements</label>		
+			<label for="Alter Arrangements" >Alter Arrangements</label>		
 		</div>
 
 		<div class="container">
 			<input type="checkbox" name="needs" value="Food Table Arrangements" id="Food Table Arrangements">
-			<label for="text" class="h8">Food Table Arrangements</label>		
+			<label for="Food Table Arrangements" >Food Table Arrangements</label>		
 		</div>
 	</div>
 
 	<div class="content3">
 		<div class="container">
 			<input type="checkbox" name="needs" value="Boutonniers" id="Boutonniers">
-			<label for="text" class="h8">Boutonniers</label>
+			<label for="Boutonniers" >Boutonniers</label>
 		</div>
 
 		<div class="container">
 			<input type="checkbox" name="needs" value="Bouquets" id="Bouquets">
-			<label for="text" class="h8">Bouquets</label>
+			<label for="Bouquets" >Bouquets</label>
 		</div>
 	
 		<div class="container">
 			<input type="checkbox" name="needs" value="Aisle Decorations" id="Aisle Decorations">
-			<label for="text" class="h8">Aisle Decorations</label>
+			<label for="Aisle Decorations" >Aisle Decorations</label>
 		</div>
 
 		<div class="container">
-			<input type="checkbox" name="needs" value="Other" id="Other">
-			<label for="text" class="h8">Other</label>
+			<input type="checkbox" name="needs" value="Other" id="Other Flower Need">
+			<label for="Other Flower Need" >Other</label>
 		</div>
 	</div>
 
 
 
-<h8> <b>Favorite Flowers - Please pick up to 3</b><h8>
+<h4 class="left-align"> <b>Favorite Flowers - Please pick up to 3</b></h4>
 
 	<div class="content3">
 		<div class="container">
 			<input type="checkbox" name="favorites" value="Daisies" id=Daisies>
-			<label for="text" class="h8">Daisies</label>
+			<label for="Daisies" >Daisies</label>
 		</div>
 
 		<div class="container">
 			<input type="checkbox" name="favorites" value="Lilies" id="Lilies">
-			<label for="text" class="h8">Lilies</label>
+			<label for="Lilies">Lilies</label>
 		</div>
 	
 		<div class="container">
 			<input type="checkbox" name="favorites" value="Sunflowers" id="Sunflowers">
-			<label for="text" class="h8">Sunflowers</label>
+			<label for="Sunflowers" >Sunflowers</label>
 			</div>
 
 		<div class="container">
 			<input type="checkbox" name="favorites" value="Orchids" id="Orchids">
-			<label for="text" class="h8">Orchids</label>
+			<label for="Orchids" >Orchids</label>
 		</div>
 	</div>
 
 	<div class="content3">
 		<div class="container">
 			<input type="checkbox" name="favorites" value="Roses" id="Roses">
-			<label for="text" class="h8">Roses</label>
+			<label for="Roses" >Roses</label>
 		</div>
 
 		<div class="container">
 			<input type="checkbox" name="favorites" value="Carnations" id="Carnations">
-			<label for="text" class="h8">Carnations</label>
+			<label for="Carnations">Carnations</label>
 		</div>
 	
 		<div class="container">
 			<input type="checkbox" name="favorites" value="Hydrangeas" id="Hydrangeas">
-			<label for="text" class="h8">Hydrangeas</label>
+			<label for="Hydrangeas" >Hydrangeas</label>
 		</div>
 	
 		<div class="container">
 			<input type="checkbox" name="favorites" value="Peonies" id="Peonies">
-			<label for="text" class="h8">Peonies</label>
+			<label for="Peonies" >Peonies</label>
 		</div>
 	</div>
 
 	<div class="content3">
 		<div class="container">
 			<input type="checkbox" name="favorites" value="Tulips" id="Tulips">
-			<label for="text" class="h8">Tulips</label>
+			<label for="Tulips" >Tulips</label>
 		</div>
 
 		<div class="container">
 			<input type="checkbox" name="favorites" value="Daffodils" id="Daffodils">
-			<label for="text" class="h8">Daffodils</label>
+			<label for="Daffodils">Daffodils</label>
 		</div>
 	
 		<div class="container">
 			<input type="checkbox" name="favorites" value="Violets" id="Violets">
-			<label for="text" class="h8">Violets</label>
+			<label for="Violets" >Violets</label>
 		</div>
 	
 		<div class="container">
 			<input type="checkbox" name="favorites" value="Chrysanthemums" id="Chrysanthemums">
-			<label for="text" class="h8">Chrysanthemums</label>
+			<label for="Chrysanthemums" >Chrysanthemums</label>
 		</div>
 	</div>
 
 
 
-<h8> <b>Favorite Style - Please pick up to 2</b></h8>
+<h4 class="left-align"> <b>Favorite Style - Please pick up to 2</b></h4>
 
 	<div class="content3">
 		<div class="container">
 			<input type="checkbox" name="style" value="Elegant" id="Elegant">
-			<label for="text" class="h8">Elegant</label>
+			<label for="Elegant">Elegant</label>
 		</div>
 
 		<div class="container">
 			<input type="checkbox" name="style" value="Minimalist" id="Minimalist">
-			<label for="text" class="h8">Minimalist</label>
+			<label for="Minimalist" >Minimalist</label>
 		</div>
 	
 		<div class="container">
 			<input type="checkbox" name="style" value="Classic" id="Classic">
-			<label for="text" class="h8">Classic</label>
+			<label for="Classic">Classic</label>
 		</div>
 
 		<div class="container">
 			<input type="checkbox" name="style" value="Bohemian" id="Bohemian">
-			<label for="text" class="h8">Bohemian</label>
+			<label for="Bohemian" >Bohemian</label>
 		</div>
 	</div>
 
 	<div class="content3">
 		<div class="container">
 			<input type="checkbox" name="style" value="Rustic" id="	Rustic">
-			<label for="text" class="h8">Rustic</label>
+			<label for="Rustic" >Rustic</label>
 		</div>
 
 		<div class="container">
 			<input type="checkbox" name="style" value="Boho-Chic" id="Boho-Chic">
-			<label for="text" class="h8">Boho-Chic</label>
+			<label for="Boho-Chic">Boho-Chic</label>
 		</div>
 	
 		<div class="container">
 			<input type="checkbox" name="style" value="Exotic" id=Exotic>
-			<label for="text" class="h8">Exotic</label>
+			<label for="Exotic">Exotic</label>
 		</div>
 
 		<div class="container">
 			<input type="checkbox" name="style" value="Romantic" id="Romantic">
-			<label for="text" class="h8">Romantic</label>
+			<label for="Romantic" >Romantic</label>
 		</div>
 	</div>
 
@@ -291,7 +295,7 @@
 	</div>
 
 
-</form>
+</div>
 
 </div>
 
@@ -326,7 +330,7 @@
 	</div>
 
 	<div class="footer">
-		<div class="column"><a href="largeeventinfo">
+		<div class="column"><a href="largeeventinfo.html">
 		<h6>Large Event Info<br>
 		Shop Now</h6></a>
 		</div>

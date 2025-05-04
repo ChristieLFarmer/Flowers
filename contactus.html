@@ -5,75 +5,72 @@
 		<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<head>
+	</head>
  
 <body>
 
-	<div class="header">
-		<a href="index.html">
-		<h5>Laine's Lilies<h5> </a>
-		<a href="mygardenbasket.html">
-		<h6>My Garden Basket</h6> </a>
-		<a href="largeeventinfo.html">
-		<h6>Large Event Info</h6></a>
-		<a href="placeanorder.html">
-		<h6>Place an Order</h6></a>
-		<a href="todaysbouquets.html">
-		<h6>Today's Bouquets</h6></a>
-	</div>	
+<nav aria-label="Main navigation">
+	<ul>
+		<li><a href="index.html" class="brand">Laine's Lilies</a> </li>
+		<li><a href="todaysbouquets.html">Today's Bouquets</a></li>
+		<li><a href="placeanorder.html">Place an Order</a> </li>
+		<li><a href="largeeventinfo.html">Large Event Info</a> </li>
+		<li><a href="mygardenbasket.html">My Garden Basket</a> </li>
+	</ul>
+</nav>
 
 <h1> Contact Us</h1>
 
 <h2> Laine's Lilies <br> 717.555.1234 <br>123 Linden St<br>Big City, PA 12345 </h2>
  
 <div class="box">
-<form action="/action/page.php">
-	<h8><b>Your Information</b></h8>
+<div class="form">
+	<h4 class="left-align"><b>Your Information</b></h4>
 
 		<div class="content3">
 			<div class="column2">
-				<label for="fname" class="h8" >First Name:</label>
+				<label for="fname" >First Name:</label>
 				<input type="text" id="fname" name="fname">
 		
-				<label for="pnumber" class="h8" >Phone Number:</label>
-				<input type="text" id="pnumber" name="pnumber">
+				<label for="pnumber">Phone Number:</label>
+				<input type="tel" id="pnumber" name="pnumber" placeholder="(123)456-7890">
 			</div>
 
 			<div class="column2">
-				<label for="lname" class="h8"> Last Name: </label>
+				<label for="lname" > Last Name: </label>
 				<input type="text" id="lname" name="lname">
 	
-				<label for="eaddress" class="h8"> Email Address: </label>
-				<input type="text" id="eaddress" name="eaddress">
+				<label for="email" > Email Address: </label>
+				<input type="text" id="email" name="email">
 			</div>
 		</div>
 
-	<h8> <b>Preferred Method of Contact</b></h8>
+	<h4 class="left-align"> <b>Preferred Method of Contact</b></h4>
 
 	<div class="content3">
 		<div class="container">
 			<input type="checkbox" name="contact" value="Phone" id="Phone">
-			<label for="Phone" class="h8">Phone</label>
+			<label for="Phone" >Phone</label>
 		</div>
 
 		<div class="container">
 			<input type="checkbox" name="contact" value="Text" id="Text">
-			<label for="Text" class="h8"> Text</label>
+			<label for="Text" > Text</label>
 		</div>
 
 		<div class="container">
 			<input type="checkbox" name="Email" value="Email" id="Email">
-			<label for="Email" class="h8">Email</label>
+			<label for="Email" >Email</label>
 		</div>
 	</div>
 
 
 
-	<h8><b>How can we help?</b></h8>
+	<h4 class="left-align"><b>How can we help?</b></h4>
 
 	<div class="column2">
-	<label for="message" class="h8">Your Message Here</label>
-	<textarea class="message-box"> </textarea>
+	<label for="message-box">Your Message Here</label>
+	<textarea class="message-box" name="message-box" id="message-box"> </textarea>
 	</div>
 
 
@@ -83,9 +80,11 @@
 	<button class="button"> Submit </button> </a>
 </div>
 
+
+
 </div>
 
-</form>
+</div>
 
 <div class="line"></div>
 
@@ -116,7 +115,7 @@
 	</div>
 
 	<div class="footer">
-		<div class="column"><a href="largeeventinfo">
+		<div class="column"><a href="largeeventinfo.html">
 		<h6>Large Event Info<br>
 		Shop Now</h6></a>
 		</div>
